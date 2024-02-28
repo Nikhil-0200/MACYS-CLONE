@@ -19,6 +19,11 @@ import twitter from "./TWITTER.svg";
 import verify from "./VERIFY.svg";
 import yt from "./YT.svg";
 
+import mail from "./icons8-envelope-48.png";
+import globe from "./icons8-globe-48.png";
+import door from "./icons8-sliding-door-48.png";
+import truck from "./icons8-truck-48.png";
+
 export {
   backArrow,
   bigSearch,
@@ -40,4 +45,9 @@ export {
   twitter,
   verify,
   yt,
+  
+  mail,
+  globe,
+  door,
+  truck,
 };
