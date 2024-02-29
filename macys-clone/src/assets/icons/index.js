@@ -24,6 +24,9 @@ import globe from "./icons8-globe-48.png";
 import door from "./icons8-sliding-door-48.png";
 import truck from "./icons8-truck-48.png";
 
+import appStore from "./appStoreIcon.svg";
+import googleStore from "./googlePlayIcon.svg";
+
 export {
   backArrow,
   bigSearch,
@@ -45,9 +48,10 @@ export {
   twitter,
   verify,
   yt,
-  
   mail,
   globe,
   door,
   truck,
+  appStore,
+  googleStore,
 };
