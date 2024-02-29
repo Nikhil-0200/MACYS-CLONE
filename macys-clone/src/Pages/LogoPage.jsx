@@ -3,7 +3,7 @@ import HeroSection from "../Sections/LogoPageSection/HeroSection";
 import HeroSectionBorder from "../Sections/LogoPageSection/HeroSectionBorder";
 import Information from "../Sections/LogoPageSection/Information";
 import { InformationData } from "../Constants";
-import Footer from "../Components/Footer";
+
 const LogoPage = () => {
   return (
     <section className="max-container">
@@ -14,9 +14,6 @@ const LogoPage = () => {
         {InformationData.map((ele, index) => (
           <Information {...ele} key={index} />
         ))}
-      </section>
-      <section>
-      <Footer/>
       </section>
     </section>
   );

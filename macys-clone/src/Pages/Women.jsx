@@ -1,7 +1,10 @@
+import WomenHero from "../Sections/WomenPageSection/WomenHero"
 
 const Women = () => {
   return (
-    <div>Women</div>
+    <section className="max-container">
+      <WomenHero/>
+    </section>
   )
 }
 

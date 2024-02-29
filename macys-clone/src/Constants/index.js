@@ -88,3 +88,80 @@ export const footerEnd = [
     "© 2024 Macy’s. All rights reserved. Macys.com, LLC, 151 West 34th Street, New York, NY 10001. Request our corporate name & address by email."
   
 ]
+
+export const womenSideBarData = [
+{
+  title:"Women's Clothing",
+  links: [
+    {name: "All Women's Clothing", link: "/"},
+    {name: "New Arrivals", link: "/"},
+    {name: "Activewear", link: "/"},
+    {name: "Blazers", link: "/"},
+    {name: "Bras, Underwear & Lingerie", link: "/"},
+    {name: "100% Cashmere", link: "/"},
+    {name: "Coats & Jackets", link: "/"},
+    {name: "Dresses", link: "/"},
+    {name: "Hoodies & Sweatshirts", link: "/"},
+    {name: "Jeans", link: "/"},
+    {name: "Jumpsuits & Rompers", link: "/"},
+    {name: "Loungewear", link: "/"},
+    {name: "Pajamas & Robes", link: "/"},
+    {name: "Pants & Capris", link: "/"},
+    {name: "Shorts", link: "/"},
+    {name: "Skirts", link: "/"},
+    {name: "Suits & Suit Separates", link: "/"},
+    {name: "Sweaters", link: "/"},
+    {name: "Swimsuits & Cover-Ups", link: "/"},
+    {name: "Tights, Socks, & Hosiery", link: "/"},
+    {name: "Tops", link: "/"},
+  ]
+},
+{
+  title: "Shop By Size Range",
+  links:[
+    {name: "Plus Sizes", link:"/"},
+    {name: `Petites (5'4" & Under)`, link:"/"},
+    {name: "Maternity", link:"/"},
+  ]
+},
+{
+  title:"Juniors",
+  links:[
+    {name:"All Juniors Clothing", link:"/"},
+    {name:"Coats & Jackets", link:"/"},
+    {name:"Dresses", link:"/"},
+    {name:"Jeans", link:"/"},
+    {name:"Shorts", link:"/"},
+    {name:"Sweaters", link:"/"},
+    {name:"Tops", link:"/"},
+  ]
+},
+{
+  title: "Women's Shoes",
+  links: [
+    {name: "All Women's Shoes", link:"/"},
+    {name: "New Arrivals", link:"/"},
+    {name: "Sandals", link:"/"},
+    {name: "Sneakers & Athletic Shoes", link:"/"},
+    {name: "Clogs", link:"/"},
+  ]
+},
+{
+  title: "Handbags & Accessories",
+  links: [
+    {name: "Handbags & Wallets", link:"/"},
+    {name: "Accessories", link:"/"},
+    {name: "Eyeglasses by LensCrafters", link:"/"},
+  ]
+},
+{
+  title: "Jewelry & Watches",
+  links: [
+    {name:"Jewelry Sale & Clearance", link:"/"},
+    {name:"Watches Sale & Clearance", link:"/"},
+    {name:"All Watches", link:"/"},
+    {name:"Bracelets", link:"/"},
+    {name:"Earrings", link:"/"},
+  ]
+}
+]
