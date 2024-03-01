@@ -77,3 +77,19 @@
   }
   
 }
+
+.slick-prev,
+.slick-next {
+  /* font-size: 24px; Customize the font size */
+  background-color: black;
+  scale: 2;
+  text-align: center;
+  border-radius: 50%;
+  color: black;
+}
+
+
+
+.slick-slide > div{
+  margin: 0 10px;
+}

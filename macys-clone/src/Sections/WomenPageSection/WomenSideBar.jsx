@@ -4,7 +4,7 @@ import SideBarAccordion from "./SideBarAccordion"
 
 const WomenSideBar = () => {
   return (
-    <section>
+    <section className="w-[23%] font-macys-light text-sm max-lg:hidden">
         <div className="py-5">
         <div className="flex flex-col gap-4 font-macys-light text-sm text-red-700 py-2">
         <Link>40% off Tops</Link>

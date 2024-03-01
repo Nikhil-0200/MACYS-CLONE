@@ -2,7 +2,7 @@ import WomenHero from "../Sections/WomenPageSection/WomenHero"
 
 const Women = () => {
   return (
-    <section className="max-container">
+    <section className="max-container overflow-hidden">
       <WomenHero/>
     </section>
   )

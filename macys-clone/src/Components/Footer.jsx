@@ -10,7 +10,7 @@ import FooterAccordion from "../Sections/LogoPageSection/FooterAccordion";
 const Footer = () => {
 
   return (
-    <section>
+    <section className="max-container">
        <section className="bg-[#1F1F1F] w-full lg:flex lg:justify-between px-7 text-white font-macys-light">
       <div className="flex max-lg:hidden py-10 lg:w-3/5 lg:justify-start lg:gap-32">
         {footerData.map((ele, index)=>(

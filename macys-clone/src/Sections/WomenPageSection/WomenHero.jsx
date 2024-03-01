@@ -1,10 +1,11 @@
 import WomenSideBar from "./WomenSideBar"
 import WomenMain from "./WomenMain"
+import WomenFooter from "./WomenFooter"
 
 const WomenHero = () => {
   return (
     <section className="px-6">
-      <div className="font-macys-bold text-2xl">
+      <div className="font-macys-bold text-2xl max-lg:pt-6">
         <h1>Women</h1>
       </div>
 
@@ -12,6 +13,7 @@ const WomenHero = () => {
         <WomenSideBar/>
         <WomenMain/>
       </section>
+      <WomenFooter/>
     </section>
   )
 }
