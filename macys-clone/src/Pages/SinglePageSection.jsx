@@ -16,7 +16,6 @@ const SinglePageSection = () => {
         baseURL: `https://script.google.com/macros/s/AKfycbxvTbZ8zoHAh4yQO8a1Oaf9m-R_jFsQUNnZpSi9vz9LuDSeYU_2XSqC1WttOeSk0bwT/exec?productName=${productName}`,
       });
       setData(res.data.data);
-      console.log(res.data.data);
     } catch (error) {
       console.error("Error");
     }
