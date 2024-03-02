@@ -1,8 +1,8 @@
 
-const EvenSection = ({data, key}) => {
+const EvenSection = ({data}) => {
   return (
     <section className="border-b-[1px]">
-        <div key={key}>
+        <div>
             <h1 className="text-[40px] sm:text-[50px] font-macys-bold pb-8 sm:pb-14">{data.title}</h1>
         </div>
 

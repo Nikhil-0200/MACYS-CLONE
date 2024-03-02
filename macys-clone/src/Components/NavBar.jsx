@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { indiaFlag } from "../assets/Images/index";
-import { hamburger, macyLogo } from "../assets/icons";
+import { macyLogo } from "../assets/icons";
 import { cart } from "../assets/icons";
 import { search } from "../assets/icons";
+import NavAccordion from "../Sections/NavAccordion";
+
 const NavBar = () => {
   return (
-    <nav className="font-macys-light lg:border-b-[1.5px] border-[#c8c8c8] max-container">
+    <nav className="font-macys-light lg:border-b-[1.5px] border-[#c8c8c8] max-container z-10">
       <div className="text-[12px] flex justify-between items-center border-b-[1.5px] border-[#c8c8c8] py-4 px-7 max-lg:justify-center">
         <div>
           <p className="text-center">
@@ -33,7 +35,9 @@ const NavBar = () => {
       </div>
       <section className="flex justify-between  px-7 py-7 relative">
         <div className="flex gap-5 max-lg:pb-8">
-          <img className="lg:hidden" src={hamburger} alt="menuIcon" width={30} height={30}/>
+          <div className="lg:hidden">
+          <NavAccordion/>
+          </div>
           <Link to="/">
             <img src={macyLogo} alt="MacysLogo" />
           </Link>

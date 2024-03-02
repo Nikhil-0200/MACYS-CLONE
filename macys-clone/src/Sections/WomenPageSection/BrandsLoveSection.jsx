@@ -1,6 +1,6 @@
 
 
-const BrandsLoveSection = ({data, key}) => {
+const BrandsLoveSection = ({data}) => {
   return (
     <section>
         <div>

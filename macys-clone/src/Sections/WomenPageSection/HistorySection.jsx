@@ -1,19 +1,21 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from "react-responsive";
 
-const HistorySection = ({data, key}) => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow:5,
-        slidesToScroll: 1,
-      };
-
+const HistorySection = ({data}) => {
+    const isMobile = useMediaQuery({query: `(max-width: 640px)`})
+    const isTablet = useMediaQuery({ minWidth: 641, maxWidth: 1023 });
+      const settings = {
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: isMobile ? 2 : isTablet ? 3 : 5,
+          slidesToScroll: 1,
+        };
   return (
     <section>
-        <div className="py-5">
+        <div >
             <h1 className="font-macys-medium text-xl font-extrabold">
                 {data.title}
             </h1>
@@ -23,7 +25,7 @@ const HistorySection = ({data, key}) => {
         <Slider {...settings}>
             {data.Data.map((ele, index)=>(
                 <div key={index}>
-                    <div >
+                    <div>
                         <img src={ele.img} alt="Images" />
                     </div>
 

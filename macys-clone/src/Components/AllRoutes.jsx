@@ -9,6 +9,7 @@ import {
   Sale,
   Women,
   Shoes,
+  SinglePageSection,
 } from "../Pages/index";
 import {Route, Routes} from "react-router-dom"
 
@@ -27,6 +28,7 @@ const AllRoutes = () => {
             <Route path="/jewelry" element={<Jewelry/>}/>
             <Route path="/sale" element={<Sale/>}/>
             <Route path="/cart" element={<Cart/>}/>
+            <Route path="/singlePageSection/:productName" element={<SinglePageSection/>}/>
         </Routes>
     </div>
   )

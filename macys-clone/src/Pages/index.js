@@ -8,6 +8,7 @@ import Men from "./Men";
 import Sale from "./Sale";
 import Women from "./Women";
 import Shoes from "./Shoes";
+import SinglePageSection from "./SinglePageSection";
 
 export {
   Cart,
@@ -20,4 +21,5 @@ export {
   Sale,
   Women,
   Shoes,
+  SinglePageSection
 };
