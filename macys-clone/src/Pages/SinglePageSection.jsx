@@ -39,7 +39,7 @@ const SinglePageSection = () => {
       <div className="w-[55%]">
       {data.map((ele)=>(
              <RightSection
-            {...ele}
+            data={ele}
             key={ele.id}
             />
         ))}

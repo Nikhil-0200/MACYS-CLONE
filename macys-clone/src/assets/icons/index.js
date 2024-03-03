@@ -27,6 +27,9 @@ import truck from "./icons8-truck-48.png";
 import appStore from "./appStoreIcon.svg";
 import googleStore from "./googlePlayIcon.svg";
 
+import minus from "./icons8-minus-24.png";
+import plus2 from "./icons8-plus-24.png";
+
 export {
   backArrow,
   bigSearch,
@@ -54,4 +57,7 @@ export {
   truck,
   appStore,
   googleStore,
+
+  minus,
+  plus2,
 };
