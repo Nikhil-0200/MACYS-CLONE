@@ -9,7 +9,7 @@ const SalesCard = ({productName, price, topHeading, image1, id}) => {
 
             <div className="font-macys-medium text-sm flex flex-1 flex-col justify-between py-3">
                 <h1 >{topHeading}</h1>
-                <Link to={`/singlePageSection/${productName}`}><h1 className="pt-1">{productName}</h1></Link>
+                <Link to={`/singlePageSection/${productName}`}><h1 className="pt-1 underline">{productName}</h1></Link>
                 <h1 className="font-extrabold pt-4">{price}</h1>
             </div>
         </section>

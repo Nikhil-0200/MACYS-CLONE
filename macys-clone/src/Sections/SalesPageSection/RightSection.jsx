@@ -71,29 +71,29 @@ export const RightSection = ({ data }) => {
   }
 
   return (
-    <section className="w-[78%] px-10">
+    <section className=" lg:w-[78%]  lg:px-10">
       <div>
-        <h1 className="uppercase font-macys-medium text-sm">
+        <h1 className="uppercase font-macys-medium lg:text-sm text-lg">
           {data.topHeading}
         </h1>
-        <h1 className="w-[100%] font-macys-bold text-[26px] leading-tight py-3">
+        <h1 className="w-full font-macys-bold text-3xl lg:text-[26px] leading-tight py-3">
           {data.productName}
         </h1>
-        <h1 className="font-macys-medium text-sm py-3">{data.rating}</h1>
-        <h1 className="font-macys-bold text-lg py-3">{data.price}</h1>
+        <h1 className="font-macys-medium text-lg lg:text-sm py-3">{data.rating}</h1>
+        <h1 className="font-macys-bold text-xl lg:text-lg py-3">{data.price}</h1>
       </div>
 
       <div className="py-10">
-        <h1 className="font-macys-medium text-sm">SIZE: {size}</h1>
+        <h1 className="font-macys-medium lg:text-sm text">SIZE: {size}</h1>
 
-        <div className="font-macys-light text-sm grid grid-cols-5 gap-4 py-5">
+        <div className="font-macys-light text-sm flex sm:grid sm sm:grid-cols-4 lg:grid-cols-5 gap-4 py-5 flex-wrap">
           {["XXS", "XS", "S", "M", "L", "XL", "XXL"].map((sizeData, index) => (
             <button
               key={index}
               onClick={() => {
                 setSize(sizeData);
               }}
-              className={`border-[1.5px] border-black py-3 rounded-md ${
+              className={`border-[1.5px] border-black max-sm:py-5 max-sm:px-7 max-sm:w-[100px] sm:py-3 rounded-md ${
                 size === sizeData ? "border-[2.5px] border-black" : ""
               }`}
             >

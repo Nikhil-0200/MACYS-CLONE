@@ -26,8 +26,8 @@ const SinglePageSection = () => {
   }, [productName]);
 
   return (
-    <section className="flex px-5 py-10 justify-between">
-      <div className="w-[40%]">
+    <section className="flex px-5 py-10 justify-between max-sm:flex-col max-container">
+      <div className="w-[40%] max-sm:w-full">
         {data.map((ele)=>(
             <LeftSection 
             {...ele}
@@ -36,7 +36,7 @@ const SinglePageSection = () => {
         ))}
       </div>
 
-      <div className="w-[55%]">
+      <div className="lg:w-[55%]">
       {data.map((ele)=>(
              <RightSection
             data={ele}
