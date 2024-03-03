@@ -27,7 +27,9 @@ const CartItemsCard = ({
     const newTotal = (parseFloat(price.slice(3))).toFixed(2) * count;
     setTotal(newTotal);
     getDataCallback(id, newTotal);
-  }, [count, price, id, getDataCallback]);
+  }, [count, price, id]);
+
+  // Error Corrected
 
   function handleInc() {
     setCount((prevCount) => prevCount + 1);
