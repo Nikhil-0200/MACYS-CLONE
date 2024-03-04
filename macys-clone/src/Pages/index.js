@@ -9,6 +9,8 @@ import Sale from "./Sale";
 import Women from "./Women";
 import Shoes from "./Shoes";
 import SinglePageSection from "./SinglePageSection";
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export {
   Cart,

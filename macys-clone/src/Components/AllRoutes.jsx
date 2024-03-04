@@ -1,3 +1,4 @@
+import Payment from "../Pages/Payment";
 import {
   Cart,
   Handbags,
@@ -12,6 +13,7 @@ import {
   SinglePageSection,
 } from "../Pages/index";
 import {Route, Routes} from "react-router-dom"
+
 
 
 const AllRoutes = () => {
@@ -29,6 +31,7 @@ const AllRoutes = () => {
             <Route path="/sale" element={<Sale/>}/>
             <Route path="/cart" element={<Cart/>}/>
             <Route path="/singlePageSection/:productName" element={<SinglePageSection/>}/>
+            <Route path="/payment" element={<Payment/>}/>
         </Routes>
     </div>
   )

@@ -1,11 +1,16 @@
 import CartItemsCard from "../Sections/CartPageSection/CartItemsCard";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Payment from "./Payment";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const [data, setData] = useState(JSON.parse(localStorage.getItem("CART")));
 
   const [totals, setTotals] = useState([]);
+
+  console.log(data);
 
   const removeFromCart = (itemId) => {
     const updatedCart = data.filter((item) => item.id !== itemId);
@@ -23,17 +28,25 @@ const Cart = () => {
       return updatedTotals;
     });
   }
-  
 
-const calculateTotalSum = () => {
-  const totalSum = Object.values(totals)
-    .reduce((acc, total) => acc + parseFloat(total || 0), 0)
-    .toFixed(2);
-  return totalSum;
-};
+  const calculateTotalSum = () => {
+    const totalSum = Object.values(totals)
+      .reduce((acc, total) => acc + parseFloat(total || 0), 0)
+      .toFixed(2);
+    return totalSum;
+
+    
+  };
+
+  const handleCheckOut = () => {
+    const totalSum = calculateTotalSum()
+
+    navigate("/payment", {state: {totalSum}});
+  };
 
   return (
     <section className="px-6 flex justify-between py-5 max-lg:flex-col">
+      
       <div className="max-lg:w-full w-[55%]">
         <div className="py-3 border-b-[1.3px] border-black">
           <h1 className="font-macys-bold text-3xl">Your Bag</h1>
@@ -78,9 +91,16 @@ const calculateTotalSum = () => {
             <span>Subtotal</span>
             <span>${calculateTotalSum()}</span>
           </div>
-          <button className="bg-black py-3 px-3 rounded-lg text-white font-macys-medium w-full">Proceed To Checkout</button>
+          <button
+            onClick={handleCheckOut}
+            className="bg-black py-3 px-3 rounded-lg text-white font-macys-medium w-full"
+          >
+            Proceed To Checkout
+          </button>
 
-          <Link className="underline" to="/sale">Continue Shopping</Link>
+          <Link className="underline" to="/sale">
+            Continue Shopping
+          </Link>
         </div>
       </div>
     </section>
