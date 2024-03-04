@@ -27,7 +27,7 @@ const Jewelry = () => {
   }, []);
 
   return (
-    <section>
+    <section className="max-container">
       <div className="flex justify-center">
       {loading && <Loading />}
       </div>
