@@ -13,7 +13,7 @@ Welcome to the Macy's Clone project! This project is a web application that repl
 The repository is organized with the following directory structure to maintain a clear separation of concerns and facilitate easy navigation through various components, pages, sections, and assets.
 
 -src
-  |-- components
+  |-- components.
       |-- AllRoutes.jsx
       |-- Counter.jsx
       |-- Footer.jsx
