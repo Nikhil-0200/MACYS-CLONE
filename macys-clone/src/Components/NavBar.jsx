@@ -4,8 +4,10 @@ import { macyLogo } from "../assets/icons";
 import { cart } from "../assets/icons";
 import { search } from "../assets/icons";
 import NavAccordion from "../Sections/NavAccordion";
+import Cart from "../Pages/Cart";
 
 const NavBar = () => {
+  
   return (
     <nav className="font-macys-light lg:border-b-[1.5px] border-[#c8c8c8] max-container z-10">
       <div className="text-[12px] flex justify-between items-center border-b-[1.5px] border-[#c8c8c8] py-4 px-7 max-lg:justify-center">
@@ -52,7 +54,7 @@ const NavBar = () => {
         </div>
         <div>
           <Link to="/cart">
-            <img src={cart} alt="cartImage" />
+            <img src={cart} alt="cartImage"/>
           </Link>
         </div>
       </section>

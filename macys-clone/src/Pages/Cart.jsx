@@ -1,8 +1,8 @@
 import CartItemsCard from "../Sections/CartPageSection/CartItemsCard";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Payment from "./Payment";
 import { useNavigate } from "react-router-dom";
+import NavBar from "../Components/NavBar";
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const Cart = () => {
 
   const [totals, setTotals] = useState([]);
 
-  console.log(data);
+  console.log(data.length);
 
   const removeFromCart = (itemId) => {
     const updatedCart = data.filter((item) => item.id !== itemId);
@@ -34,8 +34,6 @@ const Cart = () => {
       .reduce((acc, total) => acc + parseFloat(total || 0), 0)
       .toFixed(2);
     return totalSum;
-
-    
   };
 
   const handleCheckOut = () => {
@@ -44,9 +42,10 @@ const Cart = () => {
     navigate("/payment", {state: {totalSum}});
   };
 
+  
+
   return (
     <section className="px-6 flex justify-between py-5 max-lg:flex-col">
-      
       <div className="max-lg:w-full w-[55%]">
         <div className="py-3 border-b-[1.3px] border-black">
           <h1 className="font-macys-bold text-3xl">Your Bag</h1>
