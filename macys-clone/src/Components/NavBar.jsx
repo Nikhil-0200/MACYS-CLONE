@@ -68,12 +68,6 @@ const NavBar = () => {
             <Link to="/kids">Kids & Baby</Link>
           </li>
           <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/shoes">Shoes</Link>
-          </li>
-          <li>
             <Link to="/handbags">Handbags & Accessories</Link>
           </li>
           <li>

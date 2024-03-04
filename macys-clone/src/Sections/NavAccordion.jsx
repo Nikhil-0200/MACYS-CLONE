@@ -42,14 +42,7 @@ const NavAccordion = () => {
           
             
             <Link className='py-5 bg-blue-100 text-center rounded-lg text-xmdfont-medium font-macys-bold'  to="/kids" onClick={onClose}>Kids & Baby</Link>
-         
-            
-            <Link className='py-5 bg-blue-100 text-center rounded-lg text-xmdfont-medium font-macys-bold'  to="/home" onClick={onClose}>Home</Link>
-           
-            
-            <Link className='py-5 bg-blue-100 text-center rounded-lg text-xlmdont-medium font-macys-bold'  to="/shoes" onClick={onClose}>Shoes</Link>
-           
-           
+                    
             <Link className='py-5 bg-blue-100 text-center rounded-lg text-lg fomd-medium font-macys-bold' to= "/handbags" onClick={onClose}>Handbags & Accessories</Link>
           
            

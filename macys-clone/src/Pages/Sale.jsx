@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import SalesCard from "../Components/SalesCard"
+import Loading from "../Components/Loading";
 
 const Sale = () => {
 const [data, setData] = useState([]);
@@ -8,7 +9,7 @@ const [loading, setLoading] = useState(false);
   async function fetchData(){
     setLoading(true)
     try {
-      let res = await fetch(`https://script.google.com/macros/s/AKfycbxvTbZ8zoHAh4yQO8a1Oaf9m-R_jFsQUNnZpSi9vz9LuDSeYU_2XSqC1WttOeSk0bwT/exec`)
+      let res = await fetch(`https://script.google.com/macros/s/AKfycbw1CfVgiDL_x8Fk7hJCbMYfbV0dKifXuuQkR0caLb7_eHsXplwQLPveHyH78iWZa4Cq/exec`)
       let finalData = await res.json()
       setData(finalData.data)
       setLoading(false)
@@ -25,9 +26,9 @@ fetchData()
 
   return (
     <section>
-      {loading && (
-  <h1>Loading.....</h1>
-)}
+      <div className="flex justify-center">
+      {loading && <Loading />}
+      </div>
       <div id="salesGrid" className="grid lg:grid-cols-4 sm:grid-cols-3 max-sm:grid-cols-2 ">
         {data.map((ele, index)=>(
           <SalesCard

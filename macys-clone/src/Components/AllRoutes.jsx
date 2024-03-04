@@ -2,14 +2,12 @@ import Payment from "../Pages/Payment";
 import {
   Cart,
   Handbags,
-  Home,
   Jewelry,
   Kids,
   LogoPage,
   Men,
   Sale,
   Women,
-  Shoes,
   SinglePageSection,
 } from "../Pages/index";
 import {Route, Routes} from "react-router-dom"
@@ -24,8 +22,6 @@ const AllRoutes = () => {
             <Route path="/women" element={<Women/>}/>
             <Route path="/men" element={<Men/>}/>
             <Route path="/kids" element={<Kids/>}/>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/shoes" element={<Shoes/>}/>
             <Route path="/handbags" element={<Handbags/>}/>
             <Route path="/jewelry" element={<Jewelry/>}/>
             <Route path="/sale" element={<Sale/>}/>
