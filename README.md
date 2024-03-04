@@ -20,10 +20,12 @@ The repository is organized with the following directory structure to maintain a
 |   |-- Loading.jsx
 |   |-- NavBar.jsx
 |   |-- SalesCard.jsx
-|
+
+
 |-- constants
 |   |-- index.js
-|
+
+
 |-- pages
 |   |-- Cart.jsx
 |   |-- HandbagsAccessories.jsx
@@ -36,7 +38,8 @@ The repository is organized with the following directory structure to maintain a
 |   |-- SinglePageSection.jsx
 |   |-- Women.jsx
 |   |-- index.js
-|
+
+
 |-- sections
 |   |-- CartPageSection
 |   |   |-- (files related to CartPageSection)
@@ -51,7 +54,8 @@ The repository is organized with the following directory structure to maintain a
 |   |   |-- (files related to WomenPageSection)
 |   |
 |   |-- NavAccordion.jsx
-|
+
+
 |-- assets
 |   |-- Fonts
 |   |   |-- (font files)
@@ -61,7 +65,8 @@ The repository is organized with the following directory structure to maintain a
 |   |
 |   |-- icons
 |       |-- (icon files)
-|
+
+
 |-- App.jsx
 |-- index.css
 |-- main.jsx
